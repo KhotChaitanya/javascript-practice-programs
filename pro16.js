@@ -10,11 +10,9 @@ let data = [
 ]
 
 // Fetch the button from the DOM, store it in a variable
+const janeBtn = document.getElementById("jane-btn")
 // Use addEventListener() to listen for button clicks
-// Log Jane's score when the button is clicked (via data)
-const logBtn = document.getElementById("log-btn")
-
-logBtn.addEventListener("click", function() {
-    logBtn.innerHTML = `<p> Jane's score is ${data[0].score} </p>`
-    //console.log(`Jane's score is ${data[0].score}`)
+janeBtn.addEventListener("click", function() {
+    console.log(data[0].score)
 })
+// Log Jane's score when the button is clicked (via data)
